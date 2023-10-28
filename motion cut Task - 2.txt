@@ -1,0 +1,19 @@
+#Unit Convertor Between Feet and Meter
+print ("Welcome to length Converter")
+
+try:
+    choice = int(input("Enter the number of your conversion choice (1/2): "))
+    if choice == 1:
+        user_input = float(input('User Please Enter the length in meters: '))
+        print(user_input)
+        feet = 3.281 * user_input
+        print("INFO :: The length in feet is ",format(feet))
+    elif choice == 2:
+        user_input = float(input('User Please Enter the length in feet: '))
+        print(user_input)
+        meters = user_input / 3.28084
+        print("INFO :: The length in feet is ",round(meters,2))
+    else:
+        print("Invalid choice. Please select 1 or 2.")
+except ValueError:
+    print('Error :: Enter a valid integer to convert length into Meters')
